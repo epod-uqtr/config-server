@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/epod-uqtr/config-server #git repository
+          searchPaths: eureka, zuul, fitbit, auth, patient #repository folder, each one represent a service (dev and prod configuration files)
+          force-pull: true # to force pull the repository locally (https://cloud.spring.io/spring-cloud-config/reference/html/#_force_pull_in_git_repositories)
+spring.cloud.config.server.git.skipSslValidation: true
+server.port: 8760
+spring.application.name: config-server
