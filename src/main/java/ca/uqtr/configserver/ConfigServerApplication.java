@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableEurekaClient
 @SpringBootApplication
 @RestController
-@ComponentScan(basePackages={"ca.uqtr"})
 public class ConfigServerApplication {
 
     @Value("${test}")
@@ -32,9 +31,5 @@ public class ConfigServerApplication {
         return hello;
     }
 
-    @GetMapping("/g")
-    public String gg() {
-        return "ggggg";
-    }
 
 }
