@@ -2,7 +2,7 @@ server:
  port: 8760
 spring:
   application:
-    name: config-server
+    name: configService
   cloud:
     config:
       server:
