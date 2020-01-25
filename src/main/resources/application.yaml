@@ -11,4 +11,4 @@ spring:
           searchPaths:  zuul*,eureka*, fitbit*, auth*, patient* #repository folder, each one represent a service (dev and prod configuration files)
           force-pull: true # to force pull the repository locally (https://cloud.spring.io/spring-cloud-config/reference/html/#_force_pull_in_git_repositories)
           skipSslValidation: true # Skip the ssl validation of git source
-
+test: hello world
